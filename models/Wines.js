@@ -24,7 +24,7 @@ const storeSchema = new Schema({
     },
 
     precio: {
-        type: String,
+        type: Number,
         required: true,
     },
 });

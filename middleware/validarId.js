@@ -1,8 +1,8 @@
-const { vinos } = require("../models/Wines");
+const { Wine } = require("../models/Wines");
 
 const validarId = async (req, res, next) => {
   try {
-    const vinos = await vinos.findById(req.params.id);
+    const vinos = await Wine.findById(req.params.id);
     if (vinos !== null) {
       next();
     } else {
